@@ -1,0 +1,95 @@
+/**
+ * @name VSC Cord
+ * @version 1.4
+ * @description Theme based on Visual Studio Code design. Credit to userMacieG#7591 for allowing me to use stuff from his Discord.tv theme.
+ * @author Xyhlo#9766
+*/
+/* USRBG */
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/UsrBgs.css");
+/* SUPPORTERS */
+@import url('https://userMacieG.github.io/betterdiscord/supporters.css');
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+body.powercord . header-QKLPzZ{background: unset!important;}
+
+
+.bd-button:hover,
+.bd-button:active,
+.bd-button:focus {
+	background-color: var(--color-brand-darker);
+}
+
+.bd-button.bd-button-danger:hover,
+.bd-button.bd-button-danger:active,
+.bd-button.bd-button-danger:focus {
+	background-color: var(--color-red-darker);
+}
+
+.inner-2pOSmK:hover {
+	border-color: #575758;
+	background-color: #3e3e40;
+}
+
+/*Rainbow Wave USER#ID*/
+.subtext-2HDqJ7,
+.customStatus-1UAQAK,
+.hovered-20u3oh,
+.title-338goq {
+    background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+    animation: gradient-border 3s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
+@keyframes gradient-border {
+    0%, 200% {
+        background-position: 0 0;
+    }
+
+    99.999999999999999% {
+        background-position: 130% 0;
+    }
+}
+/*Rainbow wave mention*/
+html .mention.wrapper-1ZcZW-.mention.interactive{
+    background-image: linear-gradient(to left,rgb(51, 255, 0), rgb(255, 230, 0), red, rgb(234, 0, 255), rgb(0, 140, 255), rgb(51, 255, 0));
+    animation: gradient-border 3s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    position: relative;
+    z-index: 1;
+}
+@keyframes gradient-border {
+    0%, 200% {
+        background-position: 0 0;
+    }
+
+    99.999999999999999% {
+        background-position: 130% 0;
+    }
+
+  /*avatar only memberlist until hover*/
+.chatContent-3KubbW { /*Chat pannel and message box*/
+    margin-right: 60px;
+}
+.membersWrap-3NUR2t {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transform: translateX(80%);
+    justify-content: unset;
+    transition: transform 0.25s ease-in;
+}
+.member-2gU6Ar { /*Moves server members for aesthetic purposes*/
+    margin-left: 2px;
+    margin-bottom: 3px;
+}
+/*Shows the server members list*/
+.membersWrap-3NUR2t:hover { /*Shows server's members*/
+    transform: translateX(0%);
+}
